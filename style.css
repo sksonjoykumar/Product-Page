@@ -1,0 +1,118 @@
+/* ============ Reset Code =============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 4rem 4rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-container .product-img {
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .img-container img {
+    width: 90px;
+    height: 80px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .img-container img:hover {
+    transform: scale(1.05);
+  }
+}
+
+.main-container .product-main-img .maim-img {
+  width: 400px;
+  height: 554px;
+  border: 1px solid #ddd;
+}
+.main-container .product-main-img .maim-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.main-container .product-main-img .maim-img img:hover {
+  transform: scale(1.09);
+}
+
+.product-details {
+  margin: 0 3rem;
+  h4 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+  }
+  p,
+  .items {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: rgb(58, 58, 58);
+  }
+  .reating {
+    .r {
+      color: tomato;
+    }
+    span {
+      margin-left: 0.6rem;
+      font-family: sans-serif;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgb(123, 123, 123);
+    }
+  }
+  .price {
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: rgb(58, 58, 58);
+    del {
+      color: rgb(143, 143, 143);
+    }
+  }
+
+  .btn-container {
+    margin-top: 2rem;
+    button {
+      padding: 8px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      border-radius: 5px;
+      margin: 0 10px;
+      background-color: tomato;
+      color: #fff;
+      i {
+        margin-right: 10px;
+      }
+    }
+    .add-card {
+      background-color: #ddd;
+      color: #000;
+    }
+  }
+}
